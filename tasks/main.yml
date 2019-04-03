@@ -1,0 +1,3 @@
+---
+# tasks file for hc_vault_db_pass_mgmt/
+- include_tasks: postgresql.yml

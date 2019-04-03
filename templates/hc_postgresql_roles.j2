@@ -1,0 +1,6 @@
+{
+    "db_name": "{{ansible_hostname}}_{{postgresql_db}}",
+    "creation_statements": "{% raw %}CREATE ROLE \"{{name}}\" WITH LOGIN PASSWORD '{{password}}' VALID UNTIL '{{expiration}}'; GRANT SELECT ON ALL TABLES IN SCHEMA public TO \"{{name}}\";{% endraw %}",
+    "default_ttl": "1h",
+    "max_ttl": "24h"
+}
